@@ -1,0 +1,107 @@
+body {
+  background-image: url("/src/images/crsBG.webp");
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.counter-container {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.counter {
+  background-color: rgba(232, 10, 10, 0.7);
+  padding: 2rem;
+  display: flex; /* Flex özelliği ekledik */
+  flex-direction: column; /* İçerikleri dikey olarak sıraladık */
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto; /* Otomatik kenar boşluğu ile yatayda ortaladık */
+}
+
+.time-display {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.time-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10%;
+  padding: 10px;
+  flex: 1; /* Her zaman segmenti eşit genişlikte olacak */
+}
+
+.number {
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font boyutu */
+  font-weight: bold;
+  color: #fff;
+}
+
+.label {
+  font-size: clamp(0.8rem, 2vw, 1.2rem); /* Responsive font boyutu */
+  color: #ddd;
+  margin-top: 0.5rem;
+}
+
+.title {
+  font-size: clamp(1.5rem, 3vw, 2rem); /* Başlık için responsive font boyutu */
+  margin-bottom: 1.5rem;
+}
+
+.confetti-button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #034e05;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confetti-button:hover {
+  transform: scale(1.05);
+  background-color: #5a5a5a;
+}

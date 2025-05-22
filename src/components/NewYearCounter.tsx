@@ -79,7 +79,7 @@ const NewYearCounter = () => {
         </Button>
       </div>
       <div className="counter-image">
-        <img src="/src/images/santa.png" alt="" />
+        <img src="./src/images/santa.png" />
       </div>
     </Container>
   );
